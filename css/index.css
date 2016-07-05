@@ -660,7 +660,7 @@ html, body, .swiper-container, .swiper-slide {
 
 
 .thanks {
-    background: url("../img/Earth-and-Moon.jpg");
+    background: url("../img/starSky.jpg");
     background-size: cover;
 }
 
@@ -672,9 +672,6 @@ html, body, .swiper-container, .swiper-slide {
 
 
 
-.hanks div.thanks span {
-    color: #fff;
-}
 
 .thanks div:nth-child(1) {
     top: 5.2rem;
@@ -696,9 +693,11 @@ html, body, .swiper-container, .swiper-slide {
 .thanks div span {
     display: inline-block;
     height: .5rem;
-    text-align: right;
+    text-align: center;
     line-height: .5rem;
-    color: red;
+    font-size: .28rem;
+    color: #FFFFFF;
+    font-weight: 700;
 
 }
 
