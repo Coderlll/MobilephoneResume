@@ -664,25 +664,18 @@ html, body, .swiper-container, .swiper-slide {
     opacity:  0;
 }
 
-
-
-
 .thanks div:nth-child(1) {
-    top: 5.2rem;
+    bottom: 6rem;
     left: 1.1rem;
     width: 4rem;
     height: .5rem;
-
 }
-
-
-.thanks div:nth-child(2){
-    top: 6.2rem;
-    left: 2.1rem;
+.thanks div:nth-child(2) {
+    bottom: 4.2rem;
+    left: 1.5rem;
     width: 4rem;
     height: .5rem;
 }
-
 
 .thanks div span {
     display: inline-block;
@@ -692,22 +685,19 @@ html, body, .swiper-container, .swiper-slide {
     font-size: .28rem;
     color: #FFFFFF;
     font-weight: 700;
-
 }
-
 
 .thanks img.code {
     position: absolute;
-    top: 0.5rem;
+    bottom: 6.5rem;
     left: 1.1rem;
-    width: 4.5rem;
-    height: 4.5rem;
+    width: 4rem;
+    height: 4rem;
     border-radius: .5rem;
 }
-
 .thanks img.qq {
     position: absolute;
-    top: 7.2rem;
+    bottom: 0.8rem;
     left: 1.5rem;
     width: 3rem;
     height: 3rem;
