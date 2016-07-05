@@ -9,6 +9,54 @@ html, body, .swiper-container, .swiper-slide {
     /*overflow: hidden;*/
 }
 
+
+/*--music start--*/
+.music {
+    display: none;
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    z-index: 100;
+    width: .6rem;
+    height: .6rem;
+    background: url("../img/music.svg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.music.move {
+    -webkit-animation: musicMove 1s linear infinite both;
+    animation: musicMove 1s linear infinite both;
+}
+
+.move .musicAudio {
+    display: none;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/* slide */
+
 .swiper-slide {
     position: relative;
 }
@@ -25,7 +73,7 @@ html, body, .swiper-container, .swiper-slide {
 
 .page0>img:nth-child(1) {
     top: 2rem;
-    left: 1.05rem;
+    left: .35rem;
     /* width: 1.22rem; */
     width: 2.44rem;
     /* height: .39rem; */
@@ -33,7 +81,7 @@ html, body, .swiper-container, .swiper-slide {
 }
 .page0>img:nth-child(2) {
     top: 2.9rem;
-    left: 2rem;
+    left: 1.5rem;
     /* width: .13rem; */
     width: .26rem;
     /* height: .53rem; */
@@ -41,15 +89,15 @@ html, body, .swiper-container, .swiper-slide {
 }
 .page0>img:nth-child(3) {
     top: 4.1rem;
-    left: 0.1rem;
-    width: 5rem;
+    left: .33rem;
+    width: 2.5rem;
     /* width: 2.5rem; */
-    height: 1rem;
+    height: .75rem;
     /* height: .5rem; */
 }
 .page0>img:nth-child(4) {
     top: 5.2rem;
-    left: 2.0rem;
+    left: 1.5rem;
     width: .26rem;
     /* width: .13rem; */
     height: 1.06rem;
@@ -57,7 +105,7 @@ html, body, .swiper-container, .swiper-slide {
 }
 .page0>img:nth-child(5) {
     top: 6.23rem;
-    left: 1.0rem;
+    left: .5rem;
     /* width: 1.1rem; */
     width: 2.2rem;
     /* height: .39rem; */
@@ -66,7 +114,7 @@ html, body, .swiper-container, .swiper-slide {
 
 .page0>img:nth-child(6) {
     top: 7.2rem;
-    left: 2rem;
+    left: 1.5rem;
     width: .26rem;
     /* width: .13rem; */
     /* height: .53rem; */
@@ -75,7 +123,7 @@ html, body, .swiper-container, .swiper-slide {
 
 .page0>img:nth-child(7) {
     top: 8.26rem;
-    left: 0.9rem;
+    left: 0.4rem;
     width: 2.5rem;
     /* width: 1.25rem; */
     height: .74rem;
@@ -83,7 +131,7 @@ html, body, .swiper-container, .swiper-slide {
 }
 .page0>img:nth-child(8) {
     top: 9.15rem;
-    left: 2rem;
+    left: 1.5rem;
     /* width: .13rem; */
     width: .26rem;
     /* height: .53rem; */
@@ -91,11 +139,32 @@ html, body, .swiper-container, .swiper-slide {
 }
 .page0>img:nth-child(9) {
     top: 10.2rem;
-    left: 1.6rem;
+    left: 1.1rem;
     width: 1rem;
     /* width: .5rem; */
     height: .8rem;
     /* height: .4rem; */
+}
+
+
+.page0 img.qiaobusi {
+    top: 4.2rem;
+    left: 1.5rem;
+    width: 6.5rem;
+    /* width: .5rem; */
+    height: 7.5rem;
+    background-size: contain;
+    /* height: .4rem; */
+}
+.page0 img.foolish {
+
+    top: 10.0rem;
+    left: 2.3rem;
+    width: 4rem;
+    height: 1.0rem;
+
+    background-size: cover;
+    /*background-color: lightblue;*/
 }
 
 .page0 .snow {
@@ -108,7 +177,12 @@ html, body, .swiper-container, .swiper-slide {
     height: 10rem;
 }
 
-.page1,.page2,.page3 {
+.page2 {
+    background: url("../img/jinengtubeijing.png") no-repeat;
+    background-size: cover;
+}
+
+.page1,.page3 {
     background: url("../img/Earth-and-Moon.jpg") no-repeat;
     background-size: cover;
 }
@@ -363,6 +437,18 @@ html, body, .swiper-container, .swiper-slide {
     animation: fadeInDown .4s linear .9s both;
 }
 
+#page0  img.foolish {
+
+    -webkit-animation: zoomIn .4s linear 1.2s  both;
+    animation: zoomIn .4s linear 1.2s  both;
+}
+
+#page0  img.qiaobusi {
+
+    -webkit-animation: zoomIn .4s linear 1.4s  both;
+    animation: zoomIn .4s linear 1.4s both;
+}
+
 
 
 #page0 .snow {
@@ -553,58 +639,53 @@ html, body, .swiper-container, .swiper-slide {
     /*background-color: plum*/
 }
 
-.page2>div:nth-child(2){
-    top: 4.5rem;
-    right: .1rem;
+/*  page2 */
+
+.page2>div:nth-child(2) {
+    top: 6.9rem;
+    right: 4.1rem;
     border-radius: .04rem;
     box-shadow: .04rem .04rem .1rem 0 rgb(24,192,86);
 }
 
-.page2>div:nth-child(3){
-    top: 4.5rem;
-    left: .5rem;
-
-    border: .04rem solid  #007aff;
-
-}
-
-
-.page2>div:nth-child(4) {
-    top: 5.5rem;
-    left: .5rem;
+.page2>div:nth-child(3) {
+    top: 10.75rem;
+    left: 1rem;
     border: .04rem solid #007aff;
 }
-.page2  div:nth-child(5){
-    top: 6.5rem;
-    left: .5rem;
-    border: .04rem solid  #007aff;
+
+.page2>div:nth-child(4) {
+    top: 9.9rem;
+    left: .1rem;
+    border: .04rem solid #007aff;
+}
+.page2 div:nth-child(5) {
+    top: 6.1rem;
+    left: .1rem;
+    border: .04rem solid #007aff;
+}
+.page2 div:nth-child(6) {
+    top: 5.5rem;
+    left: .1rem;
+    border: .04rem solid #007aff;
 }
 
-.page2  div:nth-child(6){
-    top: 7.5rem;
-    left: .5rem;
-    border: .04rem solid  #007aff;
+.page2 div:nth-child(7) {
+    top: 4.8rem;
+    left: .1rem;
+    border: .04rem solid #007aff;
 }
 
-.page2  div:nth-child(7){
-
-    top: 8.5rem;
-    left: .5rem;
-    border: .04rem solid  #007aff;
+.page2 div:nth-child(8) {
+    top: 4.2rem;
+    left: .1rem;
+    border: .04rem solid #007aff;
 }
 
-.page2  div:nth-child(8){
-
-    top: 9.5rem;
-    left: .5rem;
-    border: .04rem solid  #007aff;
-}
-
-.page2  div:nth-child(9){
-
-    bottom: 0.5rem;
-    left: .5rem;
-    border: .04rem solid  #007aff;
+.page2 div:nth-child(9) {
+    bottom: 0.2rem;
+    left: .1rem;
+    border: .04rem solid #007aff;
 }
 
 /*--开始的时候每一页是存在ID的,我想实现的是只要给每页加上对应的ID,就让每一页里面的子元素开始运动--*/
