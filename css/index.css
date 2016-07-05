@@ -581,7 +581,7 @@ html, body, .swiper-container, .swiper-slide {
 }
 
 
-.page1  div:nth-child(3) span, .page1  div:nth-child(4) span,{
+.page1  div:nth-child(3) span, .page1  div:nth-child(4) span{
     text-align: center;
 }
 /* stackover */
