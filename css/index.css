@@ -678,7 +678,7 @@ html, body, .swiper-container, .swiper-slide {
 
 .thanks div:nth-child(1) {
     top: 5.2rem;
-    left: 2.1rem;
+    left: 1.1rem;
     width: 4rem;
     height: .5rem;
 
@@ -709,13 +709,15 @@ html, body, .swiper-container, .swiper-slide {
     left: 1.1rem;
     width: 4.5rem;
     height: 4.5rem;
+    border-radius: .5rem;
 }
 
 .thanks img.qq {
     position: absolute;
     top: 7.2rem;
-    left: 2.1rem;
+    left: 1.5rem;
     width: 3rem;
     height: 3rem;
+    border-radius: .5rem;
 }
 
