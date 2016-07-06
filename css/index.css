@@ -306,6 +306,40 @@ html, body, .swiper-container, .swiper-slide {
     animation-name: fadeInDown;
 }
 
+/* 向上渐入小  */
+
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
 
 
 /* 从小到大入*/
@@ -524,8 +558,8 @@ html, body, .swiper-container, .swiper-slide {
 
 #thanks div.fadeInDown {
     /*bounceInUp*/
-    -webkit-animation: fadeInDown .4s both;
-    animation: fadeInDown .4s both;
+    -webkit-animation: fadeInUp .4s both;
+    animation: fadeInUp .4s both;
 }
 
 /*#thanks div.fadeInDown {*/
